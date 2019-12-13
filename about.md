@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "关于"
-header-img: "img/green.jpg"
+header-img: "img/zhihu.jpg"
 description: ""
 ---
 
