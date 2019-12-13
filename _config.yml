@@ -48,7 +48,7 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-      author: "MuZhou"
+      author: "Cerbur"
       header-img: "img/green.jpg" # We don't want posts without a header image, that whould mean white on white
 
 # Duoshuo settings
@@ -69,7 +69,7 @@ plugins: [jekyll-paginate]
 
 # Code Libraries
 
-code-lib-url: https://github.com/Mu-Zhou/mu-zhou.github.io/blob/master/code/
+code-lib-url: https://github.com/Cerbur/Cerbur.github.io/edit/master/code/
 
 # Featured Tags
 featured-tags: true                     # whether or not using Feature-Tags
@@ -77,31 +77,31 @@ featured-condition-size: 3              # A tag will be featured if the size of 
 
 # Friends
 friends: [
-    {
-        title: "Cybeird",
-        href: "http://cybeird.tk/"
-    },{
-        title: "Soyjuice",
-        href: "http://soyjuice.tk/"
-    },{
-        title: "Janis",
-        href: "http://blog.csdn.net/janis_z/"
-    },{
-        title: "Coolkid",
-        href: "http://blog.csdn.net/coolkid_cwm/"
-    },{
-        title: "zzx",
-        href: "http://blog.csdn.net/qq_34004420/"
-    },{
-        title: "cl",
-        href: "http://blog.csdn.net/c_lyr/"
-    },{
-        title: "Tabing",
-        href: "http://blog.gyx1.cn"
-#    },{
-#        title: "",
-#        href: ""
-    }
+#     {
+#         title: "Cybeird",
+#         href: "http://cybeird.tk/"
+#     },{
+#         title: "Soyjuice",
+#         href: "http://soyjuice.tk/"
+#     },{
+#         title: "Janis",
+#         href: "http://blog.csdn.net/janis_z/"
+#     },{
+#         title: "Coolkid",
+#         href: "http://blog.csdn.net/coolkid_cwm/"
+#     },{
+#         title: "zzx",
+#         href: "http://blog.csdn.net/qq_34004420/"
+#     },{
+#         title: "cl",
+#         href: "http://blog.csdn.net/c_lyr/"
+#     },{
+#         title: "Tabing",
+#         href: "http://blog.gyx1.cn"
+# #    },{
+# #        title: "",
+# #        href: ""
+#     }
 ]
 
 # Achievements
