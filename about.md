@@ -9,7 +9,6 @@ description: "生而为人"
 
 本博客中的评论功能需要Github账号，[点此注册](https://github.com)  
 
-如果你想加友链的话，就先找到我吧！  
 
 # 开发记录
 
