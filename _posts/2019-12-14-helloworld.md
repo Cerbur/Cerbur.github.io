@@ -11,4 +11,5 @@ timedepend: true
 ---
 
 # Hello World
-写下第一个Hello World，从此开始记录生活
+写下第一个Hello World，从此开始记录生活  
+![avatar](..\img\helloworld\me.jpg)
