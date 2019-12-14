@@ -2,10 +2,10 @@
 layout: post
 title: "关于"
 header-img: "img/zhihu.jpg"
-description: ""
+description: "生而为人"
 ---
 
-文章不多，精品更少，不过我会不定时维护一下，不会弃坑，高中搭的博客，能用到什么时候呢？
+没什么东西，记录一些生活啊，学习啊什么的，反正就随便写点东西啦，算是我自己的个人空间
 
 本博客中的评论功能需要Github账号，[点此注册](https://github.com)  
 
