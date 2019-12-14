@@ -28,9 +28,6 @@ layout: default
             </div>
             <div id="qrcode-block" class="hidden-xs hidden-sm">
                 <div id="qrcode"></div>
-                <script type="text/javascript">
-                new QRCode(document.getElementById("qrcode"), window.location.href);  // 设置要生成二维码的链接
-                </script>
             	<p style="text-align:right;color:white">手机阅读</p>
             </div>
         </div>
@@ -39,7 +36,7 @@ layout: default
 
 <script src="{{ "/js/qart.min.js " | prepend: site.baseurl }}"></script>
 <script>
-//jQuery('#qrcode').qrcode({width: 128,height: 128,text: "{{ site.url }}{{ page.url }}"});
+jQuery('#qrcode').qrcode({width: 128,height: 128,text: "{{ site.url }}{{ page.url }}"});
 new QArt({
   value: '{{ site.url }}{{ page.url }}',
   imagePath: '/img/mz.jpg',
