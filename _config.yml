@@ -97,8 +97,12 @@ achievements: [
 
 #TagDetails
 tagDetails: [
-#     {
-#        name: "",
-#        content: ""
-#     }
+    {
+       name: "生活",
+       content: "你就当这是个Facebook"
+    }
+    # ,{
+    #    name: "",
+    #    content: ""
+    # }
 ]
