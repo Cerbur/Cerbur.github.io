@@ -19,7 +19,7 @@
                 <li>
                     <a href="{{ site.baseurl }}/">主页</a>
                 </li>
-                {% for page in site.pages %}{% if page.title %}
+                {% for page in site.pages %}{% if page.title and page.show %}
                 <li>
                     <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
                 </li>
@@ -30,3 +30,8 @@
     </div>
     <!-- /.container -->
 </nav>
+<progress value="0" id="progressBar">
+    <div class="progress-container">
+      <span class="progress-bar"></span>
+    </div>
+</progress>

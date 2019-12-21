@@ -1,0 +1,22 @@
+#TagDetails
+tagDetails: [
+    {
+        name: "学习笔记",
+        content: "自己的学习笔记"
+    },{
+        name: "Java",
+        content: "Java学习笔记"
+    },{
+        name: "持续记录",
+        content: "内容会持续更新的博文"
+    },{
+        name: "生活",
+        content: "就是一个Facebook"
+    },{
+        name: "转载",
+        content: "剽窃"
+#    },{
+#        name: "",
+#        content: ""
+    }
+]

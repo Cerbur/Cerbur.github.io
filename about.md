@@ -2,7 +2,8 @@
 layout: post
 title: "关于"
 header-img: "img/zhihu.jpg"
-description: "生而为人"
+description: "生而为人，生而为人"
+show: true
 ---
 
 没什么东西，记录一些生活啊，学习啊什么的，反正就随便写点东西啦，算是我自己的个人空间
@@ -20,3 +21,8 @@ description: "生而为人"
 ***
 
 我Fork了原作者Muzhou的仓库, 未来这里将是我的领地  
+
+
+***
+
+我Fork了原作者的仓库, 未来这里将是我的领地  

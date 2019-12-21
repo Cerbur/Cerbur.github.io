@@ -6,6 +6,110 @@
      所以无论设置多少层div都对性能没有影响*/
 }
 
+.tagDetails{
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
+
+progress {
+  /* Positioning */
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 5;
+
+  /* Dimensions */
+  width: 100%;
+  height: .25em;
+
+  /* Reset the apperance */  
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+
+  /* Get rid of the default border in Firefox/Opera. */
+  border: none;
+
+  /* For Firefox/IE10+ */
+  background-color: transparent;
+
+  /* For IE10+, color of the progress bar */
+  color: red;
+}
+progress::-webkit-progress-bar {
+  background-color: transparent;
+}
+.progress-container {
+  width: 100%;
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: .25em;
+  display: block;
+}
+
+.progress-bar {
+  background-color: red;
+  width: 50%;
+  display: block;
+  height: inherit;
+}
+
+
+.video{
+  width: 100%;
+  height: 650px;
+  position: relative;
+  top: -100px;
+  box-shadow: 0 7px 20px rgba(0, 0, 0, 0.5), 0 8px 28px rgba(0, 0, 0, 0.5);
+}
+.videoBiliBili, .video-js{
+  z-index: 3;
+  position: absolute;
+  width: 100% !important;
+  height: 100% !important;
+}
+.video-onloading{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: white;
+  top: 0;
+}
+.video-onloading > p{
+  margin: 0 auto;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  left: 50%;
+  font-size: 150%;
+  top: 50%;
+}
+@media screen and (max-width: 959px) {
+  .video{
+    top: -85px;
+    height: 600px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .video{
+    top: -60px;
+    height: 500px;
+  }
+}
+@media screen and (max-width: 639px) {
+  .video{
+    top: -55px;
+    height: 400px;
+  }
+}
+@media screen and (max-width: 479px) {
+  .video{
+    top: -30px;
+    height: 300px;
+  }
+}
 
 /*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/ 
 ::-webkit-scrollbar 
@@ -33,6 +137,16 @@ table > tbody > tr > td{
   visibility: hidden;
 }
 
+.post-content p{
+  text-align: justify;
+  text-justify: inter-ideograph;
+}
+
+.post-content br{
+  display: inline;
+  line-height: 2;
+}
+
 .post-content li{
   margin-left:20px;
 }
@@ -57,7 +171,7 @@ table > tbody > tr > td{
 	padding-left: 0px;
 	padding-right: 0px;
   margin-top: 20px;
-	margin-bottom: 20px;
+	margin-bottom: 30px;
   margin-left:20px;
   margin-right:20px;
   background: white;
@@ -100,17 +214,9 @@ table > tbody > tr > td{
 body{
 	position: relative;
 }
-#post-list{
-	height: 200px;
-}
 #post-list:hover{
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.22), 0 7px 28px rgba(0, 0, 0, 0.25);
   background: white;
-}
-img:hover {
-	transition: all 0.5s ease 0s;
-	-webkit-filter: blur(2px); /* Chrome, Safari, Opera */
-	filter: blur(2px);
 }
 img,
 pre{
@@ -149,7 +255,7 @@ pre:hover{/* code line */
 }
 
 #post-list-in{
-	padding-top: 3px;
+  padding: 3px;
 	margin: 20px;
 }
 #toc{
@@ -1097,21 +1203,34 @@ img::-moz-selection {
   background: transparent;
 }
 /* Hux add tags support */
+.d-none {
+  display: none !important;
+}
 .tags {
   margin-bottom: -5px;
+}
+.tags.tags-sup a,
+.tags.tags-sup .tag {
+  padding: 0 10px 0 12px;
 }
 .tags a,
 .tags .tag {
   display: inline-block;
   border: 1px solid rgba(255, 255, 255, 0.8);
   border-radius: 999em;
-  padding: 0 10px;
+  padding: 0 10px 0 10px;
   color: #ffffff;
   line-height: 24px;
   font-size: 12px;
   text-decoration: none;
   margin: 0 1px;
   margin-bottom: 6px;
+  cursor: pointer;
+}
+.tags a > sup,
+.tags .tag > sup {
+  margin-left: -2px;
+  font-weight: 700;
 }
 .tags a:hover,
 .tags .tag:hover,
@@ -1141,18 +1260,40 @@ img::-moz-selection {
 }
 #tag_cloud a,
 #tag_cloud .tag {
+  transition-property: all;
+  transition-duration: 0.4s;
+  transition-timing-function: ease;
   font-size: 14px;
   border: none;
   line-height: 28px;
   margin: 0 2px;
   margin-bottom: 8px;
-  background: #D6D6D6;
+  background: #f3f5f5;
 }
 #tag_cloud a:hover,
 #tag_cloud .tag:hover,
 #tag_cloud a:active,
-#tag_cloud .tag:active {
+#tag_cloud .tag:active,
+#tag_cloud a.focus,
+#tag_cloud .tag.focus {
   background-color: #0085a1 !important;
+}
+#tag_cloud a.focus,
+#tag_cloud .tag.focus {
+  box-shadow: rgba(0, 0, 0, 0.117647) 0 1px 6px, rgba(0, 0, 0, 0.239216) 0 1px 4px;
+}
+#tag_cloud a.tag-button--all,
+#tag_cloud .tag.tag-button--all {
+  font-weight: 700;
+  color: #0085a1!important;
+}
+#tag_cloud a.tag-button--all:hover,
+#tag_cloud .tag.tag-button--all:hover,
+#tag_cloud a.tag-button--all:active,
+#tag_cloud .tag.tag-button--all:active,
+#tag_cloud a.tag-button--all.focus,
+#tag_cloud .tag.tag-button--all.focus {
+  background-color: #e4e4e4 !important;
 }
 @media only screen and (min-width: 768px) {
   #tag_cloud {
@@ -1183,27 +1324,30 @@ img::-moz-selection {
     line-height: 2 !important;
   }
 }
-.one-tag-list .tag-text {
+.mini-post-list {
+  margin: 20px 0 15px 0;
+}
+.mini-post-list .tag-text {
   font-weight: 200;
   /* Hux learn from
      *     TypeIsBeautiful,
      *     [This Post](http://zhuanlan.zhihu.com/ibuick/20186806) etc.
      */
-  font-family: -apple-system, "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
   line-height: 1.7;
 }
-.one-tag-list .post-preview {
+.mini-post-list .post-preview {
   position: relative;
 }
-.one-tag-list .post-preview > a .post-title {
+.mini-post-list .post-preview > a .post-title {
   font-size: 16px;
   font-weight: 500;
   margin-top: 20px;
 }
-.one-tag-list .post-preview > a .post-subtitle {
-  font-size: 12px;
+.mini-post-list .post-preview > a .post-subtitle {
+  font-size: 13px;
 }
-.one-tag-list .post-preview > .post-meta {
+.mini-post-list .post-preview > .post-meta {
   position: absolute;
   right: 5px;
   bottom: 0px;
@@ -1212,17 +1356,17 @@ img::-moz-selection {
   line-height: 12px;
 }
 @media only screen and (min-width: 768px) {
-  .one-tag-list .post-preview {
+  .mini-post-list .post-preview {
     margin-left: 20px;
   }
-  .one-tag-list .post-preview > a > .post-title {
+  .mini-post-list .post-preview > a > .post-title {
     font-size: 18px;
     line-height: 1.3;
   }
-  .one-tag-list .post-preview > a > .post-subtitle {
+  .mini-post-list .post-preview > a > .post-subtitle {
     font-size: 14px;
   }
-  .one-tag-list .post-preview .post-meta {
+  .mini-post-list .post-preview .post-meta {
     font-size: 18px;
   }
 }

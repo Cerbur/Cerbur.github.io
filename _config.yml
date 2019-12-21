@@ -1,12 +1,33 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# If you need help with YAML syntax, here are some quick references for you: 
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
 # Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
 title: Cerbur Blog
+email: cerburyc@gmail.com
 header-img: "img/zhihu.jpg"
-tagline: "cn"
-description: "一个粉刷匠"
-keyword: "Cerbur, Cerbur Blog, gdut, gdutday"
-baseurl: ""
-google-site-verification: "nSeQMUtlNSQk-V20ALSl4BzLBJ6PSDCgRj1q3KWMR0E"
-url: "https://blog.cerbur.club"
+description: >- # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+keyword: "MuZhou, MuZhou Blog, OIer, noip"
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://blog.cerbur.club" # the base hostname & protocol for your site, e.g. http://example.com
 
 # About/contact
 owner:
@@ -36,73 +57,42 @@ kramdown:
 highlighter: rouge
 permalink: pretty
 paginate: 12
-exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+exclude:
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - README.md
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone: Asia/Shanghai
 
 # Defaults for posts
 defaults:
-  -
-    scope:
+  - scope:
       path: ""
       type: "posts"
     values:
       layout: "post"
       author: "Cerbur"
       header-img: "img/zhihu.jpg" # We don't want posts without a header image, that whould mean white on white
-
-# Duoshuo settings
-duoshuo_username:
-# Share component is depend on Comment so we can NOT use share only.
-duoshuo_share: false                     # set to false if you want to use Comment without Sharing
-
-# Analytics and webmaster tools stuff goes here
-google_analytics:
-google_verify:
-# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
-bing_verify:
-
-# Links to include in footer navigation
+  - scope:
+      path: "public"
+    values:
+        public: true
 
 # Gems
 plugins: [jekyll-paginate]
 
-# Code Libraries
-
-code-lib-url: https://github.com/Cerbur/Cerbur.github.io/edit/master/code/
-
 # Featured Tags
 featured-tags: true                     # whether or not using Feature-Tags
 featured-condition-size: 3              # A tag will be featured if the size of it is more than this condition value
-
-# Friends
-friends: [
-#     {
-#        title: "",
-#        href: ""
-#     }
-]
-
-# Achievements
-achievements: [
-#     {
-#        name: "",
-#        detail: "",
-#        time: "",
-#        img: "",
-#        url: ""
-#     }
-]
-
-#TagDetails
-tagDetails: [
-    {
-       name: "生活",
-       content: "你就当这是个Facebook"
-    }
-    # ,{
-    #    name: "",
-    #    content: ""
-    # }
-]
