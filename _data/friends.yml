@@ -1,3 +1,14 @@
 # Friends
 friends: [
+    {
+        title: "Muzhou",
+        href: "https://www.mosarin.tech/"
+    },{
+        title: "CerteKim",
+        href: "https://certe.kim/"
+    },{ 
+#        title: "",
+#        href: ""
+#    },{ 
+   }
 ]

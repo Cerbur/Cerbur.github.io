@@ -8,7 +8,7 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 #
-# If you need help with YAML syntax, here are some quick references for you: 
+# If you need help with YAML syntax, here are some quick references for you:
 # https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
 # https://learnxinyminutes.com/docs/yaml/
 #
@@ -25,7 +25,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
-keyword: "MuZhou, MuZhou Blog, OIer, noip"
+keyword: "Cerbur,Cerbur Blog, Gdutday"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://blog.cerbur.club" # the base hostname & protocol for your site, e.g. http://example.com
 
@@ -38,6 +38,11 @@ owner:
 # Data
 gavatar:
 favicon: favicon.ico
+musicID: 472045267
+
+qrcode:
+    imagePath: /img/cerbur.jpg
+    background: #208c5b
 
 douban_username:
 twitter_username:
@@ -46,17 +51,23 @@ facebook_username:
 weibo_username:
 zhihu_username: bu-zhi-ming-de-xiao-xue-sheng-90
 
+gitalk:
+    clientID: 62d9c353d48af3734c43
+    clientSecret: 98dc763a6654ac9f28c9eda516f6b3d706de031b
+    repo: cerbur.github.io
+    owner: Cerbur
+
 # Build settings
 # use Github Flavored Markdown !important
 # document: http://jekyllrb.com/docs/configuration/#kramdown
 
 markdown: kramdown
 kramdown:
-  input: GFM                            # use Github Flavored Markdown !important
+    input: GFM # use Github Flavored Markdown !important
 
 highlighter: rouge
 permalink: pretty
-paginate: 12
+paginate: 16
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -67,11 +78,11 @@ paginate: 12
 # their entries' file path in the `include:` list.
 #
 exclude:
-  - .jekyll-cache/
-  - gemfiles/
-  - Gemfile
-  - Gemfile.lock
-  - README.md
+    - .jekyll-cache/
+    - gemfiles/
+    - Gemfile
+    - Gemfile.lock
+    - README.md
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone: Asia/Shanghai
@@ -85,14 +96,10 @@ defaults:
       layout: "post"
       author: "Cerbur"
       header-img: "img/zhihu.jpg" # We don't want posts without a header image, that whould mean white on white
-  - scope:
-      path: "public"
-    values:
-        public: true
 
 # Gems
 plugins: [jekyll-paginate]
 
 # Featured Tags
-featured-tags: true                     # whether or not using Feature-Tags
-featured-condition-size: 3              # A tag will be featured if the size of it is more than this condition value
+featured-tags: true # whether or not using Feature-Tags
+featured-condition-size: 0 # A tag will be featured if the size of it is more than this condition value
