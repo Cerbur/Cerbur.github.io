@@ -54,7 +54,7 @@ zhihu_username: bu-zhi-ming-de-xiao-xue-sheng-90
 gitalk:
     clientID: 62d9c353d48af3734c43
     clientSecret: 98dc763a6654ac9f28c9eda516f6b3d706de031b
-    repo: cerbur.github.io
+    repo: Cerbur.github.io
     owner: Cerbur
 
 # Build settings
