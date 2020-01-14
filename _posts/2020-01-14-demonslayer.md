@@ -5,11 +5,12 @@ date: 2020-01-14
 lastDate: 2020-01-14
 categories: blog
 tags: [生活,番剧,动画,安利]
-description: 自定义音乐是OP，给老子听
+description: 
 editing: false
 timedepend: false
 musicID: 1360592706
 ---
+自定义音乐是OP，给老子听  
 # 前言
 ![avatar](https://i0.hdslb.com/bfs/bangumi/9d9cd5a6a48428fe2e4b6ed17025707696eab47b.png@254w_338h.webp)  
 因为炮姐的原因，加上考完试了。就开个大会员想着回来补番。因为鬼灭在连载的时候，就想追的。但那时候太多鸡毛蒜皮的事情，第一集看了3次都没看完。所以一直在脱，然后没屁事了，考试月就来了。我真的是，害。然后考完试，看完炮姐，忙里忙外的整完了，我就回来看番啦~以下部分含剧透酌情观看    
